@@ -17,16 +17,20 @@ const addDataToHTML = () => {
             newProduct.dataset.id = product.id;
             newProduct.classList.add('menu-item');
             newProduct.innerHTML =
-                `<img src="${product.image}" alt="">
+                `<img src="${product.image2}" alt="">
+                <div class="des" data-id="${product.id}">
                 <h2>${product.name}</h2>
                 <p>${product.des}</p>
                 <div class="price">$${product.price}</div>
-                <div class="addCart buy">Add To Cart</div>`;
+                <button class="addCart buy">Add To Cart</button>
+                </div>`;
             listProductHTML.appendChild(newProduct);
             console.log(totalPrice)
         });
+        return;
     }
 }
+
 listProductHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
     if (positionClick.classList.contains('addCart')) {
@@ -69,17 +73,20 @@ const addCartToHTML = () => {
             let info = products[positionProduct];
             listCartHTML.appendChild(newItem);
             newItem.innerHTML = `
-            <div class="image">
-                    <img src="${info.image}">
+                <div class="image">
+                    <img src="${info.image2}">
+                    <div class="name">
+                    ${info.name}
+                    ${info.des}
+                    </div>
                 </div>
-                <div class="name">
-                ${info.name}
-                </div>
+                <div data-id="${info.id}">
                 <div class="totalPrice">$${info.price * item.quantity}</div>
                 <div class="quantity">
                     <span class="minus"><</span>
                     <span>${item.quantity}</span>
                     <span class="plus">></span>
+                </div>
                 </div>
             `;
             
@@ -125,7 +132,7 @@ const changeQuantityCart = (product_id, type) => {
 
 const initApp = () => {
     // get data product
-    fetch('js/products.json')
+    fetch('../products.json')
         .then(response => response.json())
         .then(data => {
             products = data;

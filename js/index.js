@@ -317,9 +317,9 @@ if (V == "CyberHazen™ | Home") {
                             <div class="price">
                                 <p>$ ${product.price} USD</p>
                                 <a href="menu/">
-                                    <div class="buy">
+                                    <button class="buy">
                                         BUY
-                                    </div>
+                                    </button>
                                 </a>
                             </div>
                         </div>

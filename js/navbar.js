@@ -76,16 +76,15 @@ console.log(userData)
 if (userData != null) {
     loginBtn = `
     <a href="${profile}">
-        <div class="login">
-            <div class="relative z-10 flex items-center gap-2">
-                <span id="textContentLogin" class="fa-solid fa-user"></span>
-            </div>
-            <span id="animationSpanLogin"
-                class="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity"></span>
-        </div>
+    <div class="login">
+    <div class="relative z-10 flex items-center gap-2">
+    <span id="textContentLogin" class="fa-solid fa-user"></span>
+    <span id="loggedInUsers" style=" text-transform: capitalize;"></span>
+    </div>
+    </div>
     </a>`;
 } else {
-
+    
 }
 
 const navbarBox = document.querySelector('header');
@@ -122,3 +121,10 @@ navbar.innerHTML =
             </div>`;
 navbarBox.appendChild(navbar);
 
+
+if (userData) {
+    // Parse the JSON string into an object
+    userData = JSON.parse(userData);
+    // Display the data in the HTML
+    document.getElementById('loggedInUsers').innerHTML = userData.username;
+}

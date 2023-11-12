@@ -335,21 +335,26 @@ nav ul li a:hover,
       transition: all .4s linear;
       flex-wrap: wrap;
       min-height: 100%;
+      width: 100%;
 }
 
 .item {
       background-color: var(--third);
       border-radius: 20px;
-      /* width: 150px; */
-      text-align: center;
-      justify-content: center;
       padding: 22px;
-      margin: auto;
       margin: 20px auto;
-      /* min-width: 280px; */
-      /* min-height: 440px; */
       transition: all .4s linear;
       flex-wrap: wrap;
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+      display: grid;
+      grid-template-columns: 1fr 0.3fr;
+      align-items: center
+}
+
+.name{
+      width: ;
 }
 
 #cartButton span {
@@ -358,20 +363,25 @@ nav ul li a:hover,
       border-radius: 10px;
       font-size: small;
       font-weight: 500 !important;
-      width: 20px;
-      aspect-ratio: 1/1;
       display: inline-flex;
       justify-content: center;
       align-items: center;
       position: relative;
       right: 6px;
       bottom: 16px;
+      padding: 3px 6px;
 }
 
 .des {
       text-align: start;
       height: 100%;
       transition: all .4s linear;
+}
+
+.image{
+      display: flex;
+      gap: 20px;
+      font-size: large;
 }
 
 .des h3,
@@ -388,9 +398,10 @@ nav ul li a:hover,
 }
 
 .buy {
-      padding: 6px 18px;
+      padding: 10px 20px;
       background-color: var(--secondary);
       border-radius: 10px;
+      font-size: large;
       font-weight: 600;
       align-items: center;
       display: flex;
@@ -398,15 +409,18 @@ nav ul li a:hover,
       transition: var(--transition);
       justify-content: center;
       margin: 20px auto 0 auto;
+      border-style: none;
+      width: 100%;
 }
 
 .buy:hover {
       background-color: var(--primary);
-      transform: scale(0.97);
+      transform: scale(0.98);
 }
 
 .buy:active {
-      transform: scale(0.9);
+      background-color: var(--imary);
+      transform: scale(1);
 }
 
 .def-grid {
