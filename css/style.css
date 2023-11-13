@@ -353,9 +353,9 @@ nav ul li a:hover,
       align-items: center
 }
 
-.name{
+/* .name{
       width: ;
-}
+} */
 
 #cartButton span {
       background-color: var(--secondary);
