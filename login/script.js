@@ -51,7 +51,8 @@ function login() {
         alert('Please provide both username and password.');
         return;
     }
-
+    var registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
+    console.log(registeredUsers)
     const user = registeredUsers.find(u => u.username === username && u.password === password);
     const loggedInUser = document.querySelector("#loggedInUser");
     const loggedInPass = document.querySelector("#loggedInPass");
@@ -62,6 +63,7 @@ function login() {
         // Record the login event in history
         loginHistory.push({ username, timestamp: new Date().toLocaleString() });
         localStorage.setItem('loginHistory', JSON.stringify(loginHistory));
+
         localStorage.setItem('loggedUsers', JSON.stringify(currentUser));
 
         window.location.href = '../';

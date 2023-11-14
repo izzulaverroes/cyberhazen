@@ -37,3 +37,34 @@ function calculateTotalDaysLife(birthdate) {
 }
 
 document.querySelector('#totalDays').innerHTML = calculateTotalDaysLife(userData.born);
+
+// const usersData = localStorage.getItem('')
+const registeredUsers = localStorage.getItem('registeredUsers') || [];
+console.table(userData)
+function changePassword() {
+    // Assuming you have functions to get values from the form
+    var currentPassword = document.getElementById("currentPassword").value;
+    var newPassword = document.getElementById("newPassword").value;
+
+    // Verify the current password
+    if (userData && userData.password === currentPassword) {
+        // Update the password
+        userData.password = newPassword;
+        // Store the updated user data back in local storage
+        localStorage.setItem("loggedUsers", JSON.stringify(userData));
+        
+        localStorage.setItem("registeredUsers", JSON.stringify(userData));
+        window.location.href = location.href
+        alert("Password changed successfully!");
+    } 
+    else {
+        alert("Failed to change password. Please check your current password.");
+    }
+}
+
+function uploadImg() {
+    let Img = document.querySelector('#img').value
+    
+    console.log(Img)
+
+}

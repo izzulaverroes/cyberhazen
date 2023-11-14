@@ -41,8 +41,25 @@
                 <h6>Gender : <span id="loggedInGender"></span></h6>
                 <h6>Born : <span id="loggedInBorn"></span></h6><br>
                 <h6>You was alive : <span id="totalDays"></span> Days</h6>
-
                 <button onclick="logout()">Log Out</button>
+            </div><br>
+            <div class="m">
+                <label for="img"></label>
+                <input type="file" id="img">
+                <button type="button" onclick="uploadImg()">Upload</button>
+            </div>
+            <div class="m">
+                <div class="form">
+                    <div class="input">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" name="currentPassword" id="currentPassword">
+                    </div>
+                    <div class="input">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" name="newPassword" id="newPassword">
+                    </div>
+                    <button onclick="changePassword()">Change Password</button>
+                </div>
             </div>
         </div>
     </section>
