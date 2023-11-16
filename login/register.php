@@ -7,7 +7,7 @@
     <!--| Style -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <title>CyberHazen™ | Login</title>
+    <title>CyberHazen™ | Register</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
                     <div class="tit">
                         <h1>Register</h1>
                     </div>
-                    <form>
+                    <form action="register_process.php" method="post">
                         <div class="input">
                             <label for="registerEmail">Email</label>
                             <input type="email" name="email" id="registerEmail" placeholder="Enter your Email"
@@ -31,7 +31,7 @@
                         </div>
                         <div class="input">
                             <label for="registerDisplayName">Display Name</label>
-                            <input type="username" name="displayname" id="registerDisplayName"
+                            <input type="username" name="display_name" id="registerDisplayName"
                                 placeholder="Create Your Display Name" autocomplete="current-username" required>
                         </div>
                         <div class="input">
@@ -56,9 +56,9 @@
                             <input type="password" name="password" id="registerReEnterPassword"
                                 placeholder="Re Enter Your Password" autocomplete="current-password" required>
                         </div>
-                        <button type="button" id="submitButton" onclick="register()">Register</button>
+                        <button type="submit" id="submitButton">Register</button>
                         <div class="registertoggle">
-                            <p>Dont have any account ?&nbsp;</p><a href="register.html"> Register here</a>
+                            <p>Have an Account ?&nbsp;</p><a href="./"> Sign In here</a>
                         </div>
                     </form>
                 </div>

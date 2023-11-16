@@ -18,10 +18,10 @@
                     <div class="tit">
                         <h1>Login</h1>
                     </div>
-                    <form>
+                    <form action="login_process.php" method="post">
                         <div class="input">
                             <label for="loginUsername">Username</label>
-                            <input type="username" name="name" id="loginUsername" placeholder="Enter Your Username" autocomplete="current-username"
+                            <input type="username" name="username" id="loginUsername" placeholder="Enter Your Username" autocomplete="current-username"
                             required >
                         </div>
                         <div class="input">
@@ -29,9 +29,9 @@
                             <input type="password" name="password" id="loginPassword" placeholder=" Input The Password" autocomplete="current-password"
                                 required>
                         </div>
-                        <button type="button" id="submitButton" onclick="login()">Login</button>
+                        <button type="submit" id="submitButton">Login</button>
                         <div class="registertoggle">
-                            <p>Dont have any account ?&nbsp;</p><a href="register.html"> Register here</a>
+                            <p>Dont have any account ?&nbsp;</p><a href="register.php"> Register here</a>
                         </div>
                     </form>
                 </div>

@@ -40,14 +40,20 @@ else if (V == "CyberHazen™ | About") {
     login = "../login";
     profile = "../profile";
     cartVisibility = "disactive";
-} else if (V == "CyberHazen™ | Profile") {
-    home = "../";
-    about = "../about";
-    product = "../menu";
-    news = "../news";
-    login = "../login";
+}else{
+    // home = "../";
+    // about = "../about";
+    // product = "../menu";
+    // news = "../news";
+    // login = "../login";
     profile = "../profile";
     cartVisibility = "disactive";
+
+    home = "../";
+    about = "../about/";
+    product = "../menu/";
+    news = "#";
+    login = "../login";
 }
 
 let loginBtn = `

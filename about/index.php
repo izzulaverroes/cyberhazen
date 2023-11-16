@@ -239,7 +239,7 @@
                         <p>Need our product?</p>
                     </button>
                 </a>
-                <a href="../profile/">
+                <a href="../profile">
                     <button class="btncustom">
                         <svg xmlns="http://www.w3.org/2000/svg" width="92" height="105" viewBox="0 0 92 105" fill="none"
                             class="btn-icon-back">
