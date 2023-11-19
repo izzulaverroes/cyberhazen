@@ -8,8 +8,19 @@ include("../server/base.php")
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MZ9WTKZ2');</script>
+<!-- End Google Tag Manager -->
+    <meta name="description" content="Introducing new evolution of technologies, CyberHazen™ leads the innovation.">
+    <meta property="og:title" content="Empowering Tomorrow with Cutting-Edge Solutions">
     <meta charset="UTF-8">
+    <meta name="p:domain_verify" content="e933e03629c9fdf7a9d96458a30b56a6"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"CyberHazen™ leads the innovation.","datePublished":"2023-11-19T15:30:08+07:00","image":["../img/favicon.png"],"author":{"@type":"Person","name":"Muhammad Ken Izzulhaq"},"publisher":{"@type":"Organization","name":"CyberHazen™","logo":{"@type":"ImageObject","url":"../img/favicon.png"}}}</script>
     <!--| Style -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/LogoHazen.svg" type="image/x-icon">
@@ -17,6 +28,10 @@ include("../server/base.php")
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZ9WTKZ2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!--? ==== NAVBAR ==== -->
     <header>
         <div class="container">
@@ -91,7 +106,7 @@ include("../server/base.php")
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
                     }
-                    var_dump($_SESSION);
+                    //$sql = 'SELECT * FROM users WHERE username='.$_SESSION['username'];
                     $loggedInUser = $_SESSION["username"];
                     $sql = "SELECT * FROM $table WHERE username='$loggedInUser'";
                     $result = $conn->query($sql);
@@ -109,12 +124,6 @@ include("../server/base.php")
                         $gender = isset($userData["gender"]) ? $userData["gender"] : "N/A";
                         $born = isset($userData["born"]) ? $userData["born"] : "N/A";
 
-                        // echo "<p>Email: " . $email . "</p>";
-                        // echo "<p>Display Name: " . $displayName . "</p>";
-                        // echo "<p>Password: " . $password . "</p>";
-                        // echo "<p>Your gender: " . $gender . "</p>";
-                        // echo "<p>You was Born in :  " . $born . "</p>";
-                        // // echo "<img src=". $image ." />";
                         echo"<h2>Login Data</h2>";
                         echo"<h6>Email : $email</h6>";
                         echo"<h6>Username : $username </h6>";
@@ -134,24 +143,6 @@ include("../server/base.php")
             ?>
             <a href="logout.php"><button type="button" class="button">Log Out</button></a>
             </div><br>
-            <div class="m">
-                <label for="img"></label>
-                <input type="file" id="img">
-                <button type="button" onclick="uploadImg()">Upload</button>
-            </div>
-            <div class="m">
-                <div class="form">
-                    <div class="input">
-                        <label for="currentPassword">Current Password</label>
-                        <input type="password" name="currentPassword" id="currentPassword">
-                    </div>
-                    <div class="input">
-                        <label for="newPassword">New Password</label>
-                        <input type="password" name="newPassword" id="newPassword">
-                    </div>
-                    <button onclick="changePassword()">Change Password</button>
-                </div>
-            </div>
         </div>
     </section>
     <!--! ==== MENU END ==== -->
