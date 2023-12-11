@@ -86,7 +86,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="menu" id="menu">
         <div class="container">
             <div class="tit">
-                <h1><?php echo $_SESSION["username"]; ?> Profile</h1>
+                <h1><?php echo $_SESSION["username"] ?> Profile</h1>
             </div>
 
             <div class="m">

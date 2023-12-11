@@ -11,17 +11,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $born = $_POST["born"];
     $gender = $_POST["gender"];
-    $image = $_POST["image"];
+    // $image = $_POST["image"];
     $password = $_POST["password"];
 
+    function sanitizeInput($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    if (empty($_POST["username"])) {
+        $usernameErr = "Username is required";
+    } else {
+        $username = sanitizeInput($_POST["username"]);
+        
+        // Check if the username already exists in the database
+        $checkUsernameQuery = "SELECT * FROM $table WHERE username = '$username'";
+        $result = $conn->query($checkUsernameQuery);
     $sql = "INSERT INTO $table (username, password, display_name, email, born, gender, image) VALUES ('$username', '$password', '$display_name', '$email', '$born' ,'$gender', '$image')";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "Registration successful";
-        header("Location: ./"); 
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        if ($conn->query($sql) === TRUE) {
+            echo "Registration successful";
+            header("Location: ./"); 
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }        
+        if ($result->num_rows > 0) {
+            $usernameErr = "Username already exists";
+        }
     }
+
 }
 
 $conn->close();
