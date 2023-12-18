@@ -41,7 +41,18 @@ span {
 .h-100 {
       height: 100vh;
 }
-
+.d-flex{
+      display: flex;
+}
+.m-1{
+      margin: .5rem;
+}
+.m-2{
+      margin: 1.5rem;
+}
+.m-3{
+      margin: 2.5rem;
+}
 ::-webkit-scrollbar {
       appearance: none;
       width: 14px;
@@ -398,6 +409,10 @@ nav ul li a:hover,
       transition: var(--transition);
       justify-content: center;
       margin: 20px auto 0 auto;
+      -webkit-transition: var(--transition);
+      -moz-transition: var(--transition);
+      -ms-transition: var(--transition);
+      -o-transition: var(--transition);
 }
 
 .buy:hover {
@@ -1129,7 +1144,8 @@ footer {
 
 .form form input:not([type=submit]),
 .form form option,
-.form form select {
+.form form select,
+.form form textarea {
       height: 40px;
       border-radius: 8px;
       border-style: none;
@@ -1142,8 +1158,13 @@ footer {
 /* .form form option:hover{
       background-color: var(--primary);
 } */
-.form form input:not([type=submit])::placeholder {
+.form form input:not([type=submit])::placeholder,
+.form form textarea::placeholder{
       color: var(--secondary);
+}
+
+.form form textarea{
+      resize: vertical;
 }
 
 .form input:not([type=submit]):focus,
