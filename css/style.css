@@ -232,6 +232,7 @@ nav ul li a:hover,
       border-style: none;
       width: 180px;
       height: 50px;
+      text-align: center;
 }
 
 .btn span {
@@ -358,8 +359,7 @@ nav ul li a:hover,
       border-radius: 10px;
       font-size: small;
       font-weight: 500 !important;
-      width: 20px;
-      aspect-ratio: 1/1;
+      padding: 3px 5px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
