@@ -41,18 +41,23 @@ span {
 .h-100 {
       height: 100vh;
 }
-.d-flex{
+
+.d-flex {
       display: flex;
 }
-.m-1{
+
+.m-1 {
       margin: .5rem;
 }
-.m-2{
+
+.m-2 {
       margin: 1.5rem;
 }
-.m-3{
+
+.m-3 {
       margin: 2.5rem;
 }
+
 ::-webkit-scrollbar {
       appearance: none;
       width: 14px;
@@ -314,10 +319,14 @@ nav ul li a:hover,
 .m {
       width: 100%;
       background-color: var(--primary);
-      padding: 50px 50px 50px 50px;
+      padding: 50px ;
       border-radius: 20px;
       margin: 45px 0;
       box-shadow: 9px 6px 15px 0px rgba(0, 0, 0, 0.25);
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
 }
 
 .menu-box {
@@ -1159,11 +1168,11 @@ footer {
       background-color: var(--primary);
 } */
 .form form input:not([type=submit])::placeholder,
-.form form textarea::placeholder{
+.form form textarea::placeholder {
       color: var(--secondary);
 }
 
-.form form textarea{
+.form form textarea {
       resize: vertical;
 }
 
@@ -1373,4 +1382,15 @@ form label {
       z-index: -1;
       /* animation: visiicon 12s infinite linear; */
       animation: visiicon 12s infinite linear;
+}
+
+.c {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width:992px) {
+      .c {
+            grid-template-columns: 1fr;
+      }
 }
