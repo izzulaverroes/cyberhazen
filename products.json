@@ -4,6 +4,7 @@
         "name":"Hazen X-One",
         "price": 799,
         "image": "img/phone.svg",
+        "image2": "../img/phone.svg",
         "des":"<b style='color:#333'>Display:</b> 6.5-inch OLED with 120Hz refresh rate <b style='color:#333'>Processor: </b>Hazen A1 chipset <b style='color:#333'>RAM: </b>8GB <b style='color:#333'>Storage:</b> 128GB /256GB /512GB",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -12,6 +13,7 @@
         "name":"Hazen Titan-Two",
         "price": 1990,
         "image": "img/laptop.svg",
+        "image2": "../img/laptop.svg",
         "des":"<b style='color:#333'>  Specifications:</b><br>Intel Core i9 13900H processor <br> NVIDIA Quadro RTX 4000 GPU <br> 64GB RAM  1TB NVMe SSD ",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -20,6 +22,7 @@
         "name":"Hazen Headset 3.0",
         "price": 190,
         "image": "img/headset.svg",
+        "image2": "../img/headset.svg",
         "des":"An advanced virtual reality headset for immersive gaming and experiences with extra bass and 32 D surround.",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -28,6 +31,7 @@
         "name":"HazenWatch One",
         "price": 299,
         "image": "img/watch.svg",
+        "image2": "../img/watch.svg",
         "des":"A comprehensive smartwatch for health and fitness tracking, Simple design make you wont to release it from your hand",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -36,6 +40,7 @@
         "name":"Hazen Quantum server",
         "price": 3099,
         "image": "img/server.svg",
+        "image2": "../img/server.svg",
         "des":"Quantum parallelism, and superposition for complex computations, with AMD Epic 9955X 64 Cores, 128 Treads",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -44,6 +49,7 @@
         "name":"Hazen Buds Pro",
         "price": 159,
         "image": "img/buds.svg",
+        "image2": "../img/buds.svg",
         "des":"An advanced virtual reality headset for immersive gaming and experiences, with Dolby 8.2 surround extra bass",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -52,6 +58,7 @@
         "name":"Hazen Switch",
         "price": 209,
         "image": "img/nintendo.svg",
+        "image2": "../img/nintendo.svg",
         "des":"Prepare to embark on a gaming journey like no other with the HazenTech designed for the ultimate gaming experience.",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -60,6 +67,7 @@
         "name":"HazenVR Experience",
         "price": 129,
         "image": "img/vr.svg",
+        "image2": "../img/vr.svg",
         "des":"<b style='color:#333'>Headset Type:</b> Virtual Reality (VR) headset <b style='color:#333'>Display :</b> High-resolution OLED screens <b style='color:#333'>Tracking: </b>Inside-out positional tracking",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -68,6 +76,7 @@
         "name":"HazenGuard Smart",
         "price": 229,
         "image": "img/homehub.svg",
+        "image2": "../img/homehub.svg",
         "des":"A comprehensive home security system that integrates cutting-edge technology to protect your home.",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     }
