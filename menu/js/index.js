@@ -17,11 +17,11 @@ const addDataToHTML = () => {
             newProduct.dataset.id = product.id;
             newProduct.classList.add('menu-item');
             newProduct.innerHTML =
-                `<img src="${product.image2}" alt="" style="border-radius:50px;">
+                `<img src="${product.image2}" alt="" >
                 <div class="des" data-id="${product.id}">
-                <h2>${product.name}</h2>
+                <h2 style="color:#222222">${product.name}</h2>
                 <p>${product.des}</p>
-                <div class="price">$${product.price}</div>
+                <div class="price" style="color :#222222">$${product.price}</div>
                 <button class="addCart buy" style="border-style:none;">Add To Cart</button>
                 </div>`;
             listProductHTML.appendChild(newProduct);
@@ -73,23 +73,23 @@ const addCartToHTML = () => {
             let info = products[positionProduct];
             listCartHTML.appendChild(newItem);
             newItem.innerHTML = `
-                <div class="image">
-                    <img src="${info.image2}">
-                    <div class="name">
-                    ${info.name}
-                    ${info.des}
+                <div class="image d-flex">
+                    <img src="${info.image2}" style="max-width:200px">
+                    <div class="name" style="text-align:left; padding : 0 0 0 2rem">
+                        ${info.name}
+                        ${info.des}
                     </div>
                 </div>
                 <div data-id="${info.id}">
-                <div class="totalPrice">$${info.price * item.quantity}</div>
                 <div class="quantity">
                     <span class="minus">-</span>
                     <span>${item.quantity}</span>
                     <span class="plus">+</span>
                 </div>
+                    <div class="totalPrice">$${info.price * item.quantity}</div>
                 </div>
             `;
-            
+
             console.log(info.price * item.quantity)
         })
     }

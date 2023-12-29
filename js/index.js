@@ -46,7 +46,7 @@ if (V == 'CyberHazen™ | Home') {
 }
 else if (V == 'CyberHazen™ | About') {
     X2.classList.add('l-active');
-    document.querySelector('.home').style.background = "linear-gradient(0deg,rgba(255,255,255,1)0%,rgba(255,255,255,0.1)100%),var(--primary)"
+    document.querySelector('.home').style.background = "linear-gradient(0deg,rgba(255,255,255,1)0%,rgba(255,255,255,0.1)100%)"
     window.addEventListener('blur', () => {
         document.title = "I am alone :("
     })

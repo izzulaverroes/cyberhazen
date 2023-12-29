@@ -10,10 +10,10 @@
     },
     {
         "id": 2,
-        "name":"Hazen Titan-Two",
+        "name":"<br> Hazen Titan-Two",
         "price": 1990,
-        "image": "img/laptop.svg",
-        "image2": "../img/laptop.svg",
+        "image": "img/laptop.png",
+        "image2": "../img/laptop.png",
         "des":"<b style='color:#333'>  Specifications:</b><br>Intel Core i9 13900H processor <br> NVIDIA Quadro RTX 4000 GPU <br> 64GB RAM  1TB NVMe SSD ",
         "specs":"iuajsbd asuf asfj askjf sfa fasf asjfbasf ioafhohfiofj oIEJF IFH  aiskdfjh asdhfl jeih o tokk jkeuds faihdhf"
     },
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "name":"HazenWatch One",
-        "price": 299,
+        "price": 499,
         "image": "img/watch.svg",
         "image2": "../img/watch.svg",
         "des":"A comprehensive smartwatch for health and fitness tracking, Simple design make you wont to release it from your hand",
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "name":"Hazen Switch",
-        "price": 209,
+        "price": 309,
         "image": "img/nintendo.svg",
         "image2": "../img/nintendo.svg",
         "des":"Prepare to embark on a gaming journey like no other with the HazenTech designed for the ultimate gaming experience.",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "name":"HazenVR Experience",
-        "price": 129,
+        "price": 429,
         "image": "img/vr.svg",
         "image2": "../img/vr.svg",
         "des":"<b style='color:#333'>Headset Type:</b> Virtual Reality (VR) headset <b style='color:#333'>Display :</b> High-resolution OLED screens <b style='color:#333'>Tracking: </b>Inside-out positional tracking",
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "name":"HazenGuard Smart",
-        "price": 229,
+        "price": 329,
         "image": "img/homehub.svg",
         "image2": "../img/homehub.svg",
         "des":"A comprehensive home security system that integrates cutting-edge technology to protect your home.",

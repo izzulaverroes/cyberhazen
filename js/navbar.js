@@ -104,9 +104,9 @@ navbar.innerHTML =
                         <li><a href="${about}">About</a></li>
                         <li><a href="${product}">Product</a></li>
                         <li><a href="${news}">Contact</a></li>
-                        <li class="${cartVisibility}">
+                        <li class="${cartVisibility}"><a href="#"> 
                             <i class="fa-solid fa-cart-shopping" style="font-size: 1.6rem; cursor: pointer;"
-                                id="cartButton"><span>0</span></i>
+                                id="cartButton"><span>0</span></i></a>
                         </li>
                     </ul>
                     <div class="cart">
